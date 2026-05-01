@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumaira | IT Professional</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  background:linear-gradient(135deg,#0f172a,#020617);
+  color:white;
+  scroll-behavior:smooth;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(2,6,23,0.7);
+  backdrop-filter:blur(10px);
+  position:sticky;
+  top:0;
+}
+
+nav a{
+  margin-left:20px;
+  color:#cbd5e1;
+  text-decoration:none;
+}
+
+nav a:hover{color:#60a5fa;}
+
+/* HERO */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  padding:100px 10%;
+  flex-wrap:wrap;
+}
+
+.hero-text h1{
+  font-size:3rem;
+}
+
+.highlight{
+  color:#60a5fa;
+}
+
+/* typing effect */
+.typing{
+  border-right:2px solid #60a5fa;
+  white-space:nowrap;
+  overflow:hidden;
+  width:0;
+  animation: typing 3s steps(30,end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing{
+  from{width:0}
+  to{width:100%}
+}
+
+@keyframes blink{
+  50%{border-color:transparent;}
+}
+
+.hero p{
+  color:#94a3b8;
+  margin-top:10px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  border-radius:30px;
+  background:linear-gradient(45deg,#3b82f6,#9333ea);
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+}
+
+/* PROFILE */
+.profile img{
+  width:260px;
+  border-radius:50%;
+  border:4px solid #60a5fa;
+  box-shadow:0 0 50px rgba(59,130,246,0.7);
+  transition:0.3s;
+}
+
+.profile img:hover{
+  transform:scale(1.05);
+}
+
+/* SECTION */
+section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+h2{
+  color:#60a5fa;
+  margin-bottom:30px;
+}
+
+/* PROJECTS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(30,41,59,0.6);
+  padding:20px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.02);
+  background:#2563eb;
+}
+
+/* SKILLS */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+}
+
+.skills span{
+  padding:10px 15px;
+  border-radius:20px;
+  background:#1e293b;
+}
+
+/* SOCIAL */
+.social a{
+  margin:10px;
+  display:inline-block;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  border-top:1px solid #1e293b;
+  color:#64748b;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2 class="highlight">Sumaira</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+  <div class="hero-text">
+    <h1>Hi, I'm <span class="highlight">Sumaira</span></h1>
+    <h3 class="typing">IT Professional | Python Developer </h3>
+    <p>I build intelligent systems using AI and technologies.</p>
+
+    <a href="SUMAIRA CV_1.pdf" download class="btn">Download CV</a>
+
+   
+    <div class="social">
+      <a href="#"><button class="btn">GitHub</button></a>
+      <a href="#"><button class="btn">LinkedIn</button></a>
+    </div>
+   
+  </div>
+
+  <div class="profile">
+    <img src="profile.avif" alt="Profile">
+  </div>
+
+</div>
+
+<section id="about">
+  <br><br>
+  <h2>About Me</h2>
+  <p>
+    I am an IT student specializing in Artificial Intelligence. I am currently building
+    an AI Virtual Wardrobe using CNN models. My goal is to create intelligent and scalable applications.
+  </p>
+</section>
+
+<section id="projects">
+
+  <br><br>
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Smart Calculator</h3>
+      <p>Arithmetic, BMI, Temperature & Length Converter</p>
+       <a href="https://github.com/sum123-run/Artificial-Intelligence-NAVTTC-B-2026/tree/main/mini_projects/SmartCalculator" target="_blank">
+        View on GitHub
+       </a>
+    </div>
+
+    <div class="card">
+      <h3>Banking Application (List)</h3>
+      <p>Python list-based banking system</p>
+       <a href="https://github.com/sum123-run/Artificial-Intelligence-NAVTTC-B-2026/tree/main/mini_projects/banking_app_using_list" target="_blank">
+        View on GitHub
+       </a>
+    </div>
+
+    <div class="card">
+      <h3>Banking Application (Dictionary)</h3>
+      <p>Python dictionary-based banking system</p>
+       <a href="https://github.com/sum123-run/Artificial-Intelligence-NAVTTC-B-2026/tree/main/mini_projects/banking_app_using_dictionary" target="_blank">
+       View on GitHub
+       </a>
+    </div>
+
+    <div class="card">
+      <h3>Vehicle Rental System</h3>
+      <p>Python vehicle rental system</p>
+       <a href="https://github.com/sum123-run/Artificial-Intelligence-NAVTTC-B-2026/tree/main/mini_projects/VRS" target="_blank">
+        View on GitHub
+       </a>
+    </div>
+    
+
+  </div>
+
+</section>
+
+<section id="skills">
+  <br><br>
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <span>Python</span>
+    <span>Time Management</span>
+    <span>Decision Making</span>
+    <span>Numpy</span>
+    <span>Pandas</span>
+    <span>Matplotlib</span>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: sumairakiran35@gmail.com</p>
+</section>
+
+<footer>
+  © 2026 Sumaira | Portfolio
+</footer>
+
+</body>
+</html>
