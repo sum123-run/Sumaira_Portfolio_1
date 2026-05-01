@@ -1,0 +1,70 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* PAGE */
+body{
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+
+/* NAV LINKS */
+.navbar a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #60a5fa;
+}
+
+/* HERO SECTION */
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+}
+
+/* IMAGE */
+.img-box img{
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid #60a5fa;
+}
+
+/* PROJECT GRID (THIS FIXES YOUR 2 IN ONE LINE) */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* PROJECT CARD */
+.card{
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
